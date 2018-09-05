@@ -5,7 +5,7 @@ welcome_message: <a href="https://magical2world.github.io/blog.github.io/" targe
 description: Welcome to my blog.
 #creator: <a href="http://onev.cat">@onevcat</a>
 
-url: "http://vno.onevcat.com"
+#url: "http://vno.onevcat.com"
 
 permalink: /:year/:month/:title/
 
@@ -37,7 +37,7 @@ comment:
     
 # Social
 social:
-#    weibo:
+    weibo: magical2world
     github: magical2world
 #    twitter:
 #    gplus:
