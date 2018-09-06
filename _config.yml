@@ -5,15 +5,7 @@ welcome_message: <a href="https://magical2world.github.io/blog.github.io/" targe
 description: Welcome to my blog.
 #creator: <a href="http://onev.cat">@onevcat</a>
 
-#url: "http://vno.onevcat.com"
 
-permalink: /:year/:month/:title/
-
-# Format
-highlighter: rouge
-
-# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: blue
 
 # The blog button should not be removed.
 blog_button:
@@ -26,9 +18,21 @@ blog_button:
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
-gems: [jekyll-paginate]
+gems:
+  - jekyll-paginate
+  - jekyll-seo-tag
+url: "http://linlatent.com.cn"
+baseurl: ""
 paginate: 10
 paginate_path: "page/:num/"
+permalink: /:year/:month/:title/
+# Format
+highlighter: rouge
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: blue
+
+plugins:
+  - jekyll-feed
 
 # Comment
 comment:
