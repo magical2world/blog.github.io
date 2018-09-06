@@ -1,11 +1,12 @@
 # Basic
 title: Shaolin Liu
 subtitle: Shaolin's personal blog
-welcome_message: <a href="https://magical2world.github.io/blog.github.io/" target="_blank">Download the theme</a>
-description: Welcome to my blog.
+welcome_message: Welcome to my personal blog
+#welcome_message: <a href="https://magical2world.github.io/blog.github.io/" target="_blank">Download the theme</a>
+#description: Welcome to my blog.
 #creator: <a href="http://onev.cat">@onevcat</a>
 
-
+markdown: kramdown
 
 # The blog button should not be removed.
 blog_button:
@@ -21,7 +22,7 @@ blog_button:
 gems:
   - jekyll-paginate
   - jekyll-seo-tag
-url: "http://linlatent.com.cn"
+url: ""
 baseurl: ""
 paginate: 10
 paginate_path: "page/:num/"
