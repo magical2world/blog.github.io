@@ -61,7 +61,9 @@ sudo 你所下载的驱动文件 -no-opengl-files    #不安装OpenGL
 
 根据你所要安装的深度学习框架到CUDA官网<https://developer.nvidia.com/cuda-downloads>下载相应的文件。
 
-![1536223678070](C:\Users\ADMINI~1\AppData\Local\Temp\1536223678070.png)
+<figure>
+    <a><img src="{{site.url}}/my_pics/1536229944(1).png"></a>
+</figure>
 
 安装官网提示安装CUDA。切记在安装过程中第一步选项输入n，因为第一步是安装显卡驱动，而我们已经在上一步中安装了显卡驱动，之后就一直输入y或者enter键即可安装CUDA。
 
@@ -98,9 +100,9 @@ sudo apt-get install ubuntu-mate
 
 下载并安装putty，然后打开putty，在红线部分输入服务器的IP地址，然后点击open输入自己的用户名及密码就能通过终端远程访问服务器了。
 
-![1536221190(1)](C:\Users\Administrator\Desktop\1536221190(1).png)
-
-
+<figure>
+    <a><img src="{{site.url}}/my_pics/1536230953(1).png"></a>
+</figure>
 
 ##### （2）、Ubuntu端远程ssh登录
 
@@ -123,7 +125,9 @@ vi xstartup
 
 修改xstartup文件的最后一行为mate-session &
 
-![1536221664989](C:\Users\ADMINI~1\AppData\Local\Temp\1536221664989.png)
+<figure>
+    <a><img src="{{site.url}}/my_pics/1536230117(1).png"></a>
+</figure>
 
 然后在终端中输入下面的指令来杀死你刚才开辟的端口号：
 
@@ -139,7 +143,9 @@ vncserver -kill :你刚才开启的端口号
 
 下载vncviewer<https://www.realvnc.com/en/connect/download/viewer/>，并打开。在红线部分输入<u>IP地址:你所开启的端口号</u>即可进入远程左面 系统
 
-![1536222753780](C:\Users\ADMINI~1\AppData\Local\Temp\1536222753780.png)
+<figure>
+    <a><img src="{{site.url}}/my_pics/1536230178(1).png"></a>
+</figure>
 
 ##### （2）、Ubuntu下使用远程桌面系统
 
