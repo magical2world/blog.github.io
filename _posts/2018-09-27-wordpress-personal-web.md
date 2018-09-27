@@ -18,13 +18,21 @@ date: 2018-09-27 21:41:32.000000000 +09:00
 
 点击start，开启Apache及MySQL
 
-如果无法开启这两项服务则可能是端口被占用，这时修改一下配置文件中的端口号就行，这里小编遇到三种错误，分别是开启Apache时httpd.conf的80端口被占用，小编通过点击进入这个文件，将所有80改为8081问题就解决了。同样，小编还改变了httpd-ssl.conf文件中的443为4431，my.ini中的3306为3316。最终才成功同时开启了Apache及MySQL。
+如果无法开启这两项服务则可能是端口被占用，这时修改一下配置文件中的端口号就行，这里小编遇到三种错误，分别是开启Apache时httpd.conf的80端口被占用，小编通过点击进入这个文件，将所有80改为8081问题就解决了。同样，小编还改变了httpd-ssl.conf文件中的443为4431，my.ini中的3306为3316。最终才成功同时开启了Apache及MySQL。当然如果没有报错就直接开启就无需修改端口好了。
 
 <figure>
     <a><img src="{{site.url}}/my_pics/xampp2.png"></a>
 </figure>
 
 ### 二、建立数据库
+
+开启Apache及MySQL之后，在浏览器中输入http://localhost:8081/phpmyadmin/，这里因为我将httpd.conf的端口号进行了修改，所以要在localhost后面加上:8081，如果未进行修改可不加。在打开的界面中新建一个数据库：
+
+<figure>
+    <a><img src="{{site.url}}/my_pics/xampp3.png"></a>
+</figure>
+
+
 
 ### 三、安装wordpress
 
