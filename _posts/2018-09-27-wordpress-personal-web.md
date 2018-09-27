@@ -32,8 +32,8 @@ date: 2018-09-27 21:41:32.000000000 +09:00
     <a><img src="{{site.url}}/my_pics/xampp3.png"></a>
 </figure>
 
-
-
 ### 三、安装wordpress
+
+下载[wordpress](https://wordpress.org/download/)，并将其解压到你所安装xampp路径的htdocs文件夹下。
 
 ### 四、个性化设计你的网站
