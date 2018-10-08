@@ -64,3 +64,7 @@ gitbook serve
 
 然后在新的窗口中输入http://127.0.0.1:4000就可以查看书籍。
 
+### 三、将你的文章上传到github上
+
+新建一个repository，并将其clone到本地，将编辑好的书移动到clone后的文件夹中，在将文件夹中更新后的内容push到github上。
+
