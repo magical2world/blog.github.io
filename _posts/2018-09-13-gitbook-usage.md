@@ -40,3 +40,27 @@ npm install gitbook-cli -g
 gitbook install ./
 ```
 
+### 二、开始编辑文章
+
+#### 1、初始化书籍目录
+
+打开终端，在你所建的书的目录下输入
+
+```
+gitbook init
+```
+
+初始化后有两个必要文件，README.md及SUMMARY.md，其中README.md是对书籍的介绍，SUMMARY.md是书籍的目录。
+
+#### 2、编辑书籍
+
+用GitBook Editor打开你初始化的书籍，进入编辑你的书就可以了。GitBook是基于Markdown语法的。
+
+当编辑好你的书籍后，在终端中输入下面的语句即可编译你的文章。
+
+```
+gitbook serve
+```
+
+然后在新的窗口中输入http://127.0.0.1:4000就可以查看书籍。
+
