@@ -36,6 +36,8 @@ date: 2018-09-27 21:41:32.000000000 +09:00
 
 下载[wordpress](https://wordpress.org/download/)，并将其解压到你所安装xampp路径的htdocs文件夹下。打开浏览器并输入http://localhost:8081/wordpress/后会出现下面的界面：
 
+1、登录你的wordpress
+
 ### 四、个性化设计你的网站
 
 #### 1、添加多用户
