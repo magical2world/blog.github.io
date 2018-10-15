@@ -36,7 +36,23 @@ date: 2018-09-27 21:41:32.000000000 +09:00
 
 下载[wordpress](https://wordpress.org/download/)，并将其解压到你所安装xampp路径的htdocs文件夹下。打开浏览器并输入http://localhost:8081/wordpress/后会出现下面的界面：
 
-1、登录你的wordpress
+<figure>
+    <a><img src="{{site.url}}/my_pics/select_langue.png"></a>
+</figure>
+
+在出现的界面中设置自己的语言。然后进入下面的界面，来对你的账号进行设置，切记用户名设置为"root"，密码暂时设置为空，数据库名设置为你刚才新建的数据库名。其他的不用改变。
+
+<figure>
+    <a><img src="{{site.url}}/my_pics/setting_name.png"></a>
+</figure>
+
+接下来就是要设置一些站点的基本信息，以及第一个站点用户的信息，如下图所示，按照提示填写完信息后点击"安装WordPress"，等待数秒后即可完成安装。
+
+<figure>
+    <a><img src="{{site.url}}/my_pics/get_information.png"></a>
+</figure>
+
+
 
 ### 四、个性化设计你的网站
 
