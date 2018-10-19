@@ -1,13 +1,13 @@
 ---
-layout:post
-title:如何使用Git及Github
+layout: post
+title: 如何使用Git及Github
 date: 2018-10-19 11:35:32.000000000 +09:00
 ---
 
 #### 1、在你的github上新建一个repository
 
 <figure>
-    <a><img src="{{site.url}}/my_pics/new_repository.png"></a>
+    <a><img src="{{site.url}}/my_pics/new_repository.jpg"></a>
 </figure>
 
 然后将这个repository clone到本地。
