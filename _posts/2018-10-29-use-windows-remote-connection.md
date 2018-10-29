@@ -39,14 +39,3 @@ date: 2018-10-29 17:17:32.000000000 +09:00
 <figure>
     <a><img src="{{site.url}}/my_pics/windows_remote/user_password.jpg"></a>
 </figure>
-
-
-
-
-
-<figure>
-    <a><img src="{{site.url}}/my_pics/windows_remote/mstsc.jpg"></a>
-</figure>
-
-
-
