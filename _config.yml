@@ -12,6 +12,10 @@ markdown: kramdown
 blog_button:
     title: Blog
     description: Visit blog
+
+blog_button:
+    title: Blog1
+    description: Visit blog
 #
 #    title: Project
 #    description: Vist project
