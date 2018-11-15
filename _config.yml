@@ -12,13 +12,14 @@ markdown: kramdown
 blog_button:
     title: Blog
     description: Visit blog
-    title: Project
-    description: Vist project
+#
+#    title: Project
+#    description: Vist project
 
 # Navigation buttons in the front page.
-#nav:
-#    - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
-    # - {title: Another Button, description: A button, url: 'http://example.com'}
+nav:
+    - {title: Projects, description: My Projects}
+#     - {title: Blog, description: Visit blog, url: 'http://example.com'}
 
 # Pagination
 gems:
