@@ -12,6 +12,8 @@ markdown: kramdown
 blog_button:
     title: Blog
     description: Visit blog
+    title: Project
+    description: Vist project
 
 # Navigation buttons in the front page.
 #nav:
