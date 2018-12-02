@@ -1,10 +1,8 @@
 ---
 layout: post
-title: docker的安装及使用
-date： 2018-11-22 19:03:32.000000000 +09:00
+title: docker的使用
+date: 2018-11-22 19:03:32.000000000 +09:00
 ---
-
-
 
 ### 一、为什么选择docker
 
@@ -88,3 +86,5 @@ sudo docker run hello-world
     <a><img src="{{site.url}}/my_pics/docker/hello_world.jpg"></a>
 </figure>
 http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html
+
+### 三、docker的基本操作
