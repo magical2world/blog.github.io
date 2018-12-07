@@ -167,5 +167,17 @@ sudo docker build -t 你的镜像名 .
 
 #### 3、在镜像中安装必要的库
 
+##### （1）、运行镜像
+
+```
+sudo docker run -t -i tensorflow/tensorflow /bin/bash
+```
+
+
+
 #### 4、删除镜像
+
+##### （1）、首先
+
+
 
