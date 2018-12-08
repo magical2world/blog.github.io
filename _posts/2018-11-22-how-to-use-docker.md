@@ -165,19 +165,90 @@ sudo docker build -t 你的镜像名 .
 
 来生成镜像。
 
-#### 3、在镜像中安装必要的库
+#### 3、在容器中安装必要的库
 
-##### （1）、运行镜像
+##### （1）、运行容器
 
 ```
 sudo docker run -t -i tensorflow/tensorflow /bin/bash
 ```
 
+这是我们就会进入一个临时终端：
 
+<figure>
+    <a><img src="{{site.url}}/my_pics/docker/docker_terminal.jpg"></a>
+</figure>
 
-#### 4、删除镜像
+##### （2）、在容器中安装软件
 
-##### （1）、首先
+一般情况下，我们都需要根据自己的要求对pull下的容器使其满足自己的工作要求。其中最基本的就是在上面安装一些必要的包或者python库。这点在运行镜像并进入终端后就可以像在实体机上进行操作的方式来进行配置。只是这里不再需要sudo权限。
+
+#### 4、使用容器运行本地程序
+
+这一步是使用docker的关键，通过利用docker上的配置环境来运行本机的程序可以避免在其他机器上运行程序时来重新配置环境。使用容器运行本地程序的具体操作是：
+
+```
+sudo docker run -t -i -v /home/amax/test.py:/run/test.py -v /home/amax/test:/run/test tensorflow/tensorflow python /run/test.py
+```
+
+在运行主机的程序时需要先将主机的文件挂载到容器中，具体操作就是在“-v”后面加入“主机文件的绝对路径:你要挂载的路径”。需要注意的是，所要挂载的路径的名必须是以“/”开头的，此外你的程序所涉及到的文件都要挂载到容器上，并且要确保文件系统保持一致。然后我们就能利用容器运行本地程序。
+
+#### 5、删除镜像
+
+##### （1）、删除镜像
+
+```
+sudo docker images
+```
+
+然后会出现镜像的ID，根据镜像的ID来对进行进行删除
+
+<figure>
+    <a><img src="{{site.url}}/my_pics/docker/image_id.jpg"></a>
+</figure>
+
+例如删除第一个镜像
+
+```
+sudo docker rmi 2054925f3b43 
+```
+
+当然也可以直接使用镜像的名称来对镜像进行删除
+
+```
+sudo docker rmi 镜像名
+```
+
+##### （2）、删除容器
+
+当有相应的容器时就无法对该镜像进行删除，这个时候需要先删除或者停止容器
+
+首先查看容器
+
+```
+sudo docker ps -a
+```
+
+然后就可以像删除镜像一样直接删除容器
+
+```
+sudo docker rm 容器的ID
+```
+
+当然还可以使用下面的语句直接删除所有的容器
+
+```
+sudo docker rm $(sudo docker ps -aq)
+```
+
+删除容器后就可以实现对镜像的删除
+
+停止容器的操作基本一致
+
+```
+sudo docker stop 容器的ID
+sudo docker stop $(sudo docker ps -aq)
+```
 
 
 
